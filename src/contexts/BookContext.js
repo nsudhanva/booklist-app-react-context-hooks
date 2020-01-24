@@ -17,7 +17,7 @@ const BookContextProvider = (props) => {
 		setBooks(books.filter((book) => book.id !== id));
 	};
 
-	return <BookContext.Provider value={{ books, addbook, revmoeBook }}>{props.children}</BookContext.Provider>;
+	return <BookContext.Provider value={{ books, addBook, removeBook }}>{props.children}</BookContext.Provider>;
 };
 
 export default BookContextProvider;
